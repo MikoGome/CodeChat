@@ -35,6 +35,10 @@ app.get('/chatroom', (req, res) => {
   res.sendFile(path.join(__dirname, '../dist', 'index.html'));
 });
 
+app.get('/dist/bundle.js', (req, res) => {
+  res.sendFile(path.join(__dirname, '../dist', 'bundle.js'));
+});
+
 // router handler
 app.use('/api', apiRouter);
 
