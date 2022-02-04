@@ -10,7 +10,7 @@ const chatController = require('./controllers/chatController');
 const chatHistoryFuncs = require('./utils/chatHistory.js');
 
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const apiRouter = require('./Routers/apiRouter.js');
 
